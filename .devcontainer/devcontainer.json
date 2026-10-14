@@ -1,0 +1,23 @@
+{
+    "name": "Data Science with Python",
+    "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+    "features": {
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.12"
+        }
+    },
+    "postCreateCommand": "pip install -r requirements.txt",
+    "customizations": {
+        "settings": {
+        "workbench.editorAssociations": {
+          "*.ipynb": "jupyter-notebook"
+        }
+      },
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    }
+}
